@@ -1,0 +1,46 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=",M1(JnCTXwW4Nl?bj!,H">Player</variable><variable type="KIND_SpriteKind" id="28|1Rd)cN.KK.glxa~y[">Projectile</variable><variable type="KIND_SpriteKind" id="8ZSbH4D={,#=Xn3[L?O{">Food</variable><variable type="KIND_SpriteKind" id="ZN{4!ug6C((w;_adSMDl">Enemy</variable><variable id="+waOs]G.fU+6u?}rJl[,">map</variable><variable id="L2a6tLZ]NAQ@)LmP@4jA">mySprite</variable><variable id="!6qUy%}pFs9b?WRL(.$D">mySprite2</variable><variable id="LQK-MN.+O%l=K13-rIND">minimap</variable></variables><block type="pxt-on-start" id="eUsv5#Q(p16~516}p8Vz" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor" id="e=oQ;^P;3t%$az/{}HwU"><field name="tilemap">tiles.createTilemap(hex`080008000102030b161414000809040c001300000706050d0e1110000a0a0a0a00120f00210000222324201f1a19181b1c272825001d002b2c292a000000000000000000`, img`
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+`, [myTiles.tile0,sprites.castle.tilePath1,sprites.castle.tilePath2,sprites.castle.tilePath3,sprites.castle.tilePath6,sprites.castle.tilePath9,sprites.castle.tilePath8,sprites.castle.tilePath7,sprites.castle.tilePath4,sprites.castle.tilePath5,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass3,sprites.castle.tileGrass2,sprites.castle.tileGrass3,sprites.castle.tileGrass1,sprites.dungeon.collectibleRedCrystal,sprites.dungeon.collectibleBlueCrystal,sprites.dungeon.chestClosed,sprites.dungeon.darkGroundNorth,sprites.dungeon.collectibleInsignia,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorth1,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.floorDarkDiamond,sprites.dungeon.floorDark0,sprites.dungeon.floorMixed,sprites.dungeon.floorLight5,sprites.dungeon.floorDark1,sprites.dungeon.floorDark3,sprites.dungeon.greenOuterNorth2,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.stairSouth,sprites.castle.saplingPine,sprites.castle.rock1,sprites.castle.rock2,sprites.builtin.crowd3,sprites.builtin.crowd4,sprites.dungeon.hazardLava0,sprites.dungeon.hazardLava1,sprites.dungeon.buttonTeal,sprites.dungeon.buttonPink,sprites.vehicle.roadVertical,sprites.vehicle.roadHorizontal], TileScale.Sixteen)</field><next><block type="variables_set" id="8xCskxwM*Ld;bi(KsI!X"><field name="VAR" id="!6qUy%}pFs9b?WRL(.$D">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id=":3tg^}?o`aPR.11BT)@g"><value name="img"><shadow type="screen_image_picker" id="JLMA!CV6Pr!lafKZR[`*"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . b 5 5 b . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. b b b b b 5 5 5 5 5 5 5 b . . 
+. b d 5 b 5 5 5 5 5 5 5 5 b . . 
+. . b 5 5 b 5 d 1 f 5 d 4 f . . 
+. . b d 5 5 b 1 f f 5 4 4 c . . 
+b b d b 5 5 5 d f b 4 4 4 4 b . 
+b d d c d 5 5 b 5 4 4 4 4 4 4 b 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="t{Dl)nfk#D{F(]r]9-iJ"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="mapplaceontile" id="Oi`Df{2#D/7oiiEu,t5B"><value name="sprite"><block type="variables_get" id="cC[Y67S3MI0vjENr{0So"><field name="VAR" id="!6qUy%}pFs9b?WRL(.$D">mySprite2</field></block></value><value name="loc"><shadow type="mapgettile" id="wN)++xW/5c4jI1eI-gL+"><value name="col"><shadow type="math_number" id="kND;:nW)Mz8v:?5G^DtD"><field name="NUM">5</field></shadow></value><value name="row"><shadow type="math_number" id="hz.w*/!@UGiUh/Rd6AHO"><field name="NUM">5</field></shadow></value></shadow></value><next><block type="variables_set" id="[%IAK,6}S+4Jd25[)if["><field name="VAR" id="+waOs]G.fU+6u?}rJl[,">map</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="create_minimap" id="{cu1S{]o=|CBh-f6CjR_"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="3" _input_init="true"></mutation><field name="scale">MinimapScale.Half</field><value name="borderWidth"><shadow type="math_number" id="2nEFEnJ.E97VDb[GPo,*"><field name="NUM">2</field></shadow></value><value name="borderColor"><shadow type="colorindexpicker" id="^L)(S@Bo3;-@Io_p)y2#"><field name="index">1</field></shadow></value></block></value><next><block type="minimap_includeSprite" id="{pX`kjK/;2t,-mMqo@VB"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="spriteScale">MinimapSpriteScale.Double</field><value name="sprite"><block type="variables_get" id="%E,@R$APT7Rx=U,[n,${"><field name="VAR" id="!6qUy%}pFs9b?WRL(.$D">mySprite2</field></block></value><value name="minimap"><block type="variables_get" id="7[KZN~h|X~+/1r[8t+#Z"><field name="VAR" id="+waOs]G.fU+6u?}rJl[,">map</field></block></value><next><block type="variables_set" id="DwH;+${m#gOtT6{xC#ke"><field name="VAR" id="L2a6tLZ]NAQ@)LmP@4jA">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="%xNdg?.ma,}O?DMuJ{Zy"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+5 a c . 5 a c . a 7 e 
+`</field></shadow><block type="minimap_getImage" id="]Dd%Yk0,[1cY[Mur6{fJ"><value name="minimap"><shadow type="create_minimap"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="scale">MinimapScale.Half</field></shadow><block type="variables_get" id="%!D4]03^vYjEtvh1Z-TR"><field name="VAR" id="+waOs]G.fU+6u?}rJl[,">map</field></block></value></block></value><value name="kind"><shadow type="spritekind" id="2`GVZkv]#52SGpJe??Ik"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="1/c%P,]FI0a8LOQ,|6IV"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><shadow type="variables_get" id="@n*X_0{7MNpnm=-^QPGB"><field name="VAR" id="L2a6tLZ]NAQ@)LmP@4jA">mySprite</field></shadow></value><next><block type="camerafollow" id="_1sH$w.+Nk*|b$i|hdSj"><value name="sprite"><shadow type="variables_get" id="hg?zq;?a~JSozc*93#y8"><field name="VAR" id="L2a6tLZ]NAQ@)LmP@4jA">mySprite</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="tilemap_editor" id=":Zt_nCoZ9lG)!POtv!.{" disabled="true" x="430" y="490"><field name="tilemap">tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, [myTiles.tile0], TileScale.Sixteen)</field></block></xml>

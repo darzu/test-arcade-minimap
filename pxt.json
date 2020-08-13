@@ -1,0 +1,26 @@
+{
+    "name": "test arcade-minimap",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-minimap": "github:darzu/arcade-minimap#v0.5.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.0.16",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
